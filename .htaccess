@@ -19,3 +19,6 @@ RewriteRule ^ /%1 [L,R=301]
 
 # Disable directory browsing
 Options -Indexes
+
+# Custom 404 error page
+ErrorDocument 404 /error-404.html
