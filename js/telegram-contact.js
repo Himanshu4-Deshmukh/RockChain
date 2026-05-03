@@ -19,7 +19,7 @@ jQuery(document).ready(function ($) {
         const subject = document.getElementById("subject").value.trim();
         const message = document.getElementById("message").value.trim();
 
-        return `🔔 New Inquiry from Techsolv Website:
+        return `🔔 New Inquiry from RockChain Website:
 
 👤 Name: ${name}
 📧 Email: ${email}
