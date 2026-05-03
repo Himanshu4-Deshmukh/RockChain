@@ -3908,7 +3908,7 @@ blockquote::after,
 .page-title-area {
 	position: relative;
 	z-index: 1;
-	background-image: url(../images/page-title-bg.jpg);
+	background-image: url(../images/page-title-bg.png);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
