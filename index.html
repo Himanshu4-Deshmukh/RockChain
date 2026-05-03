@@ -930,12 +930,7 @@
                 <h2>Get In Touch</h2>
               </div>
               <p class="form-message"></p>
-              <form
-                id="contact-form"
-                class="main-form"
-                action="phpmail.php"
-                method="POST"
-              >
+              <form id="contact-form" class="main-form">
                 <div class="row">
                   <div class="col-lg-6 col-md-6">
                     <div class="form-group">
@@ -1142,11 +1137,100 @@
     <script src="js/vanilla-tilt.min.js"></script>
     <!-- WOW Min JS -->
     <script src="js/wow.min.js"></script>
-    <!-- Ajax Mail JS -->
-    <script src="js/ajax.mail.js"></script>
     <!-- Components Loader JS -->
     <script src="js/components-loader.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Telegram Contact Form Integration -->
+    <script src="js/telegram-contact.js"></script>
+
+    <!-- Alert Modal -->
+    <div id="alertModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="alertMessage"></p>
+      </div>
+    </div>
+
+    <style>
+      /* Alert Modal Styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(3px);
+        animation: fadeIn 0.3s ease;
+      }
+
+      .modal-content {
+        background-color: #ffffff;
+        margin: 15% auto;
+        padding: 30px 40px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 450px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        position: relative;
+        animation: slideIn 0.3s ease;
+      }
+
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        right: 18px;
+        top: 12px;
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #333;
+      }
+
+      #alertMessage {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.6;
+      }
+
+      .success-message {
+        color: #155724;
+      }
+
+      .error-message {
+        color: #721c24;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
   </body>
 </html>
