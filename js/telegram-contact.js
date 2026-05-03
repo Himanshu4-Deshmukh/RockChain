@@ -107,7 +107,8 @@ Sent from contact form`;
     const resetForm = function () {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
-        document.getElementById("service").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("subject").value = "";
         document.getElementById("message").value = "";
     };
 
