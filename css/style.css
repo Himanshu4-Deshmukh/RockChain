@@ -790,47 +790,50 @@ p:last-child {
 .Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu {
 	position: absolute;
 	z-index: 99;
-	top: 80px;
+	top: calc(100% + 6px);
 	left: 0;
-	width: 230px;
+	width: 210px;
 	display: block;
-	border-radius: 5px;
-	padding: 0px;
-	border: none;
+	border-radius: 10px;
+	padding: 8px;
+	border: 1px solid #edf1f7;
 	overflow: hidden;
 	opacity: 0;
 	visibility: hidden;
 	background-color: #ffffff;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
-	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 12px 30px rgba(35, 52, 78, 0.14);
+	box-shadow: 0 12px 30px rgba(35, 52, 78, 0.14);
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+	display: block;
 	padding: 0;
-	border-bottom: 1px solid #f1f1f1;
+	border-radius: 7px;
+	border-bottom: 0;
 }
 
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li:last-child {
-	border-bottom: 0px solid transparent;
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item + .dropdown-item {
+	margin-top: 3px;
 }
 
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item {
 	position: relative;
 	color: #404040;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 600;
-	padding: 10px 15px;
+	line-height: 1.3;
+	padding: 12px 14px;
 	text-transform: capitalize;
 	margin: 0;
 }
 
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
-.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
-	color: #ffffff;
-	background-color: #2e82ff;
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover,
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:focus,
+.Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item.active {
+	color: #2563eb;
+	background-color: #f0f6ff;
 }
 
 .Techsolv-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
